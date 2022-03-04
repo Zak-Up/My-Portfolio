@@ -16,9 +16,9 @@
         Standar: hsl(250, 90%, 72, 71%)
   */
   
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 55%;
+  --first-hue: 207;
+  --sat: 90%;
+  --lig: 50%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
@@ -265,6 +265,11 @@ body.light-theme{
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
   transition: .4s;
+  overflow: hidden;
+}
+
+.nav__menu:hover{
+  transform: scale(1.05);
 }
 
 .nav__list{
@@ -412,6 +417,7 @@ body.light-theme{
   transform: rotate(-90deg);
 }
 
+
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;
@@ -436,8 +442,24 @@ body.light-theme{
 
 .moon-light{
   color: rgb(255, 255, 66);
+  text-shadow: 0 0 2px yellow, 0 0 2px yellow, 0 0 3px yellow;
+  animation: parpadear 2s infinite backwards;
 }
 
+.zaky__neon{
+  /* border: 2px solid white;
+  box-shadow: inset 0 0 5px aqua, 0 0 5px aqua;
+  padding: 0.5rem; */
+  text-shadow: 0 0 3px aqua, 0 0 2px aqua;
+}
+
+
+@keyframes parpadear {
+  to {
+    color: var(--body-color);
+    box-shadow: none;
+  }
+}
 /*=============== ABOUT ===============*/
 .about__container{
   row-gap: 2.5rem;
@@ -499,6 +521,12 @@ body.light-theme{
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
+  overflow: hidden;
+  transition: all 400ms ease;
+}
+
+.skills__content:hover{
+  transform: scale(1.05);
 }
 
 .skills__title{
@@ -670,6 +698,12 @@ body.light-theme{
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  overflow: hidden;
+  transition: all 400ms ease;
+}
+
+.work__card:hover{
+  transform: scale(1.05);
 }
 
 .work__img{
@@ -1050,8 +1084,8 @@ body.light-theme{
   }
 
   .home__handle{
-    width: 290px;
-    height: 400px;
+    width: 280px;
+    height: 350px;
   }
 
   .home__img{
