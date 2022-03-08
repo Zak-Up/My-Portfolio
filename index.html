@@ -86,10 +86,26 @@
                     <img src="/img/pngfind.com-developer-png-3293400.png" alt="" class="home_img">
                 </div> -->
 
-                <div class="home__handle">
+                <!-- <div class="home__handle">
                     <img src="/img/pngfind.com-developer-png-3293400.png" alt="" class="home__img">
+                </div> -->
+                <!-- ========== SHOT GAME ========== -->
+                <div class="body__shot" inClick="myGunSound.play" id="gameFrame">
+                    <div id="healthBar"></div>
+                
+                        <div class="enemy " id="enemy1" onclick= "iShoot(this)"></div>
+                        <div class="enemy " id="enemy2" onclick="iShoot(this)"></div>
+                        <div class="enemy " id="enemy3" onclick="iShoot(this)"></div>
+                        <div class="enemy" id="enemy4" onclick="iShoot(this)"></div>
+                        <div class="enemy dead " id="enemy5" onclick="iShoot(this)"></div>
+                
+                        <button class="buttonn" onclick= "newGame()" > New Game </button>
                 </div>
-
+                
+                        
+                        
+                    
+                <!-- ========== SHOT GAME ========== -->
                 
 
                 <div class="home__social">
@@ -123,7 +139,7 @@
                 <h2 class="section__title">About Me</h2>
 
                 <div class="about__container container grid">
-                    <img src="/img/perfil.recort.jpeg" alt="" class="about__img">
+                    <img src="/img/perfil3p.png" alt="" class="about__img">
                     <div class="about__data">
 
                         <div class="about__info">
@@ -182,7 +198,7 @@
                             </a>
                         </div>
         
-                        <div class="work__card mix movil">
+                        <div class="work__card mix web">
                             
                          <img src="/img/Nfts.jpg" alt="" class="work__img">
         
@@ -204,7 +220,7 @@
                             </a>
                         </div>
         
-                        <div class="work__card mix web">
+                        <div class="work__card mix design">
                             
                          <img src="/img/Memory Game.png" alt="" class="work__img">
         
@@ -213,6 +229,28 @@
                             <a href="#" class="work__button">
                                 Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                             </a>
+                        </div>
+
+                        <div class="work__card mix movil">
+                            
+                            <img src="/img/Nike E comerce.jpg" alt="" class="work__img">
+           
+                               <h3 class="work__title">App Nike E comerce</h3>
+           
+                               <a href="#" class="work__button">
+                                   Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                               </a>
+                        </div>
+
+                        <div class="work__card mix web">
+                            
+                            <img src="/img/Nintendo GS.jpg" alt="" class="work__img">
+           
+                               <h3 class="work__title">Nintendo GS</h3>
+           
+                               <a href="#" class="work__button">
+                                   Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                               </a>
                         </div>
         
                         <!-- <div class="work__card mix movil">
@@ -700,7 +738,7 @@
         </div>
     </footer>
 
-
+    
     <!--                  SCROLLREVEAL                 -->
     <script src="/js/scrollreveal.min.js"></script>
     <!--                  SWIPER JS                    -->
@@ -709,6 +747,9 @@
     <script src="/js/mixitup.min.js"></script>
     <!--                    MAIN JS                    -->
     <script src="/js/main.js"></script>
+    <!--                  SWEET ALERT                 -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/sweetAlert.js"></script>
 
 
 </body>
