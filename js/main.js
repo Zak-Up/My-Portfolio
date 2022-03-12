@@ -145,7 +145,7 @@ function iShoot(enemy) {
     enemy.classList.add("dead");
 
     if(!livingEnemies().length); {
-        alert("Boom!");
+        swal("Boom!");
         window.location.reload();
     }
 }
@@ -211,7 +211,7 @@ function updateHealthPoints(points) {
     healthBar.style.width = points + "%";
 
     if(healthPoints < 1) {
-        alert("Contact Me!");
+        swal("Contact Me!");
         window.location.reload();
     }
 }
