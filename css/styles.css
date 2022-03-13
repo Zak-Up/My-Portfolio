@@ -25,8 +25,8 @@
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --body-color: hsl(var(--second-hue), 48%, 2%);
+  --container-color: hsl(var(--second-hue), 32%, 4%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -191,20 +191,6 @@ body.light-theme{
 #enemy4 {left: 485px;}
 #enemy5 {left: 645px;}
 
-/* .enemy.dead {
-  background-color: gray;
-  height: 50px;
-
-  background: #222;
-  transform: rotate(-90deg);
-  bottom:  -140px;
-
-} */
-
-/* .enemy.dead:before {
-  content: "*_*";
-  color: #555;
-} */
 
 .enemy.shooting{
   background-color: red;
@@ -546,7 +532,7 @@ body.light-theme{
 .home__social-link{
   width: max-content;
   background-color: var(--container-color);
-  color: var(--first-color);
+  color: var(--body-font);
   padding: .50rem;
   border-radius: .25rem;
   display: flex;
