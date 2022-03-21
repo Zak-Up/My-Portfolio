@@ -252,7 +252,7 @@ body.light-theme{
 }
 
 .enemy.shooting:after {
-  content: " * ";
+  content: " ♪ ";
   left: 20px;
   color: rgb(0, 225, 225);
 
